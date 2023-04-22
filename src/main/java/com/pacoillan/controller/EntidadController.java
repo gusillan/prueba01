@@ -28,4 +28,9 @@ public class EntidadController {
 		modelo.addAttribute("listaEntidades",lista);
 		return "listaEntidades";
 	}
+	@RequestMapping("/formularioEntidad")
+	public String consultaEntidadPagina() {
+		System.out.println("Aqui hemos llegado");
+		return "formularioEntidad";
+	}
 }
